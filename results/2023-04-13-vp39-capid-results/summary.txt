@@ -1,0 +1,4 @@
+hit_id	length	cysteine_content	e_value	query_accession	query_name
+Microplitis_demolitor_GANH01.transdecoder.pep_id_GANH01000214.1.p1	299	0.03	1.1e-99	-	vp39_psiBLAST_hits
+Dendroaspis_jamesoni_kaimosae_GHPB01.transdecoder.pep_id_GHPB01001526.1.p1	149	0.01	0.36	-	vp39_psiBLAST_hits
+Bungarus_multicinctus_GIKH01.transdecoder.pep_id_GIKH01034217.1.p2	187	0.01	16.0	-	vp39_psiBLAST_hits

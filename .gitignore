@@ -1,0 +1,5 @@
+*.hmm
+dbs/
+*.tar.gz
+*.fasta
+.DS_Store

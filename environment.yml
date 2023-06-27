@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - hmmer=3.3.2
+  - muscle
+  - biopython=1.81
+  - python=3.11.2
+  - blast=2.12.0

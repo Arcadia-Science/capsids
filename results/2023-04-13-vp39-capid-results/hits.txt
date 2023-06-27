@@ -1,0 +1,16 @@
+#                                                                                                                     --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name                                                              accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#                                                      ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Microplitis_demolitor_GANH01.transdecoder.pep_id_GANH01000214.1.p1         -          vp39_psiBLAST_hits   -           8.7e-100  337.8   4.7   1.1e-99  337.5   4.7   1.0   1   0   0   1   1   1   1 GANH01000214.1.p1 GENE.GANH01000214.1~~GANH01000214.1.p1  ORF type:complete (-),score=35.82 len:298 GANH01000214.1:163-1059(-)
+Dendroaspis_jamesoni_kaimosae_GHPB01.transdecoder.pep_id_GHPB01001526.1.p1 -          vp39_psiBLAST_hits   -               0.31   14.3   0.2      0.36   14.1   0.2   1.1   1   0   0   1   1   1   0 GHPB01001526.1.p1 GENE.GHPB01001526.1~~GHPB01001526.1.p1  ORF type:internal (-),score=21.97 len:149 GHPB01001526.1:1-447(-)
+Bungarus_multicinctus_GIKH01.transdecoder.pep_id_GIKH01034217.1.p2         -          vp39_psiBLAST_hits   -               0.99   12.7   0.8        16    8.7   0.2   2.0   1   1   1   2   2   2   0 GIKH01034217.1.p2 GENE.GIKH01034217.1~~GIKH01034217.1.p2  ORF type:complete (+),score=53.36 len:186 GIKH01034217.1:80-640(+)
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      vp39_capsid.hmm
+# Target file:     ../proteins/all_proteins/all_venom_proteins.fasta
+# Option settings: hmmsearch --tblout hits.txt -E 1.0 vp39_capsid.hmm ../proteins/all_proteins/all_venom_proteins.fasta 
+# Current dir:     /Users/emcdaniel/Desktop/Arcadia/science/toxin_facilitators/dbs
+# Date:            Thu Apr 13 16:40:30 2023
+# [ok]

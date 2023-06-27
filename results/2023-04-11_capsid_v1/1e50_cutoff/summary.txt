@@ -1,0 +1,10 @@
+hit_id	length	cysteine_content	e_value	query_accession	query_name
+Phoneutria_nigriventer_GFUY01.transdecoder.pep_id_GFUY01030009.1.p1	2799	0.02	3.1e-89	-	VOG00037
+Psyttalia_concolor_GCDX01.transdecoder.pep_id_GCDX01001704.1.p1	2890	0.02	1.2e-81	-	VOG00037
+Pteromalus_puparum_GECT01.transdecoder.pep_id_GECT01016007.1.p1	2743	0.02	5.5e-57	-	VOG00037
+Latrodectus_tredecimguttatus_GANL01.transdecoder.pep_id_GANL01001301.1.p1	1004	0.03	4.1e-78	-	VOG00037
+Latrodectus_tredecimguttatus_GANL01.transdecoder.pep_id_GANL01002005.1.p1	388	0.02	1.2e-67	-	VOG00037
+Ampulex_compressa_GFCP01.transdecoder.pep_id_GFCP01035204.1.p2	389	0.00	2.4e-59	-	VOG00051
+Micrurus_fulvius_GAEP01_id_lcl|GAEP01001236.1_prot_JAB53585.1_1	427	0.01	3.5e-59	-	VOG01304
+Microplitis_demolitor_GANH01.transdecoder.pep_id_GANH01000184.1.p3	428	0.01	3.6e-59	-	VOG01304
+Microplitis_demolitor_GANH01.transdecoder.pep_id_GANH01000184.1.p6	328	0.01	1.6e-59	-	VOG01304

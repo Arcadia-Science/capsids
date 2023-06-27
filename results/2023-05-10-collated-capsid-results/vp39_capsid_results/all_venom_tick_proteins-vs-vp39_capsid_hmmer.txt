@@ -1,0 +1,18 @@
+#                                                                                                                     --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name                                                              accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#                                                      ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Microplitis_demolitor_GANH01.transdecoder.pep_id_GANH01000214.1.p1         -          vp39_psiBLAST_hits   -            3.4e-99  337.8   4.7   4.2e-99  337.5   4.7   1.0   1   0   0   1   1   1   1 GANH01000214.1.p1 GENE.GANH01000214.1~~GANH01000214.1.p1  ORF type:complete (-),score=35.82 len:298 GANH01000214.1:163-1059(-)
+GIFC01P.1_id_MXU91378.1                                                    -          vp39_psiBLAST_hits   -               0.46   15.7   3.0         4   12.6   2.7   1.9   1   1   1   2   2   2   0 MXU91378.1 hypothetical protein [Ixodes ricinus]
+GCA_013358835.2_BIME_Iper_1.3_id_KAG0412895.1                              -          vp39_psiBLAST_hits   -               0.79   14.9   0.1       2.9   13.1   0.0   1.8   2   0   0   2   2   2   0 KAG0412895.1 hypothetical protein HPB47_009958, partial [Ixodes persulcatus]
+GCA_013358835.2_BIME_Iper_1.3_id_KAG0441094.1                              -          vp39_psiBLAST_hits   -               0.79   14.9   0.1       2.9   13.1   0.0   1.8   2   0   0   2   2   2   0 KAG0441094.1 hypothetical protein HPB47_016052 [Ixodes persulcatus]
+GCA_013358835.2_BIME_Iper_1.3_id_KAG0409935.1                              -          vp39_psiBLAST_hits   -                0.9   14.8   0.0       1.3   14.2   0.0   1.2   1   0   0   1   1   1   0 KAG0409935.1 hypothetical protein HPB47_012941 [Ixodes persulcatus]
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      ../../capsid_data/vp39_capsid.hmm
+# Target file:     ../../../proteins/all_venom_tick_proteins/all_venom_tick_proteins.fasta
+# Option settings: hmmsearch --tblout hits.txt -E 1.0 ../../capsid_data/vp39_capsid.hmm ../../../proteins/all_venom_tick_proteins/all_venom_tick_proteins.fasta 
+# Current dir:     /Users/emcdaniel/Desktop/Arcadia/science/toxin_facilitators/capsid_sidequest/2023-05-10-collated-capsid-results/vp39_capsid_results
+# Date:            Wed May 10 15:39:18 2023
+# [ok]

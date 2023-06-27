@@ -1,0 +1,22 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+Phoneutria_nigriventer_GFUY01.transdecoder.pep_id_GFUY01030009.1.p1       -          VOG00037             -           1.4e-129  437.4  37.2   3.1e-89  303.5   0.4   5.6   5   1   0   6   6   6   4 GFUY01030009.1.p1 GENE.GFUY01030009.1~~GFUY01030009.1.p1  ORF type:complete (+),score=326.49 len:2798 GFUY01030009.1:252-8648(+)
+Psyttalia_concolor_GCDX01.transdecoder.pep_id_GCDX01001704.1.p1           -          VOG00037             -           3.4e-109  369.8   8.0   1.2e-81  278.4   0.0   4.0   4   0   0   4   4   4   4 GCDX01001704.1.p1 GENE.GCDX01001704.1~~GCDX01001704.1.p1  ORF type:complete (+),score=-216.17 len:2889 GCDX01001704.1:663-9332(+)
+Pteromalus_puparum_GECT01.transdecoder.pep_id_GECT01016007.1.p1           -          VOG00037             -            3.9e-87  296.6  19.7   5.5e-57  196.5   0.8   3.8   4   1   0   4   4   4   3 GECT01016007.1.p1 GENE.GECT01016007.1~~GECT01016007.1.p1  ORF type:complete (+),score=89.56 len:2742 GECT01016007.1:576-8804(+)
+Latrodectus_tredecimguttatus_GANL01.transdecoder.pep_id_GANL01001301.1.p1 -          VOG00037             -            3.2e-78  267.0   0.7   4.1e-78  266.6   0.7   1.0   1   0   0   1   1   1   1 GANL01001301.1.p1 GENE.GANL01001301.1~~GANL01001301.1.p1  ORF type:5prime_partial (-),score=140.36 len:1003 GANL01001301.1:81-3092(-)
+Latrodectus_tredecimguttatus_GANL01.transdecoder.pep_id_GANL01002005.1.p1 -          VOG00037             -              1e-67  232.1   2.6   1.2e-67  231.9   2.6   1.0   1   0   0   1   1   1   1 GANL01002005.1.p1 GENE.GANL01002005.1~~GANL01002005.1.p1  ORF type:5prime_partial (+),score=28.71 len:387 GANL01002005.1:1-1164(+)
+Ampulex_compressa_GFCP01.transdecoder.pep_id_GFCP01035204.1.p2 -          VOG00051             -              2e-59  206.4   8.4   2.4e-59  206.1   8.4   1.0   1   0   0   1   1   1   1 GFCP01035204.1.p2 GENE.GFCP01035204.1~~GFCP01035204.1.p2  ORF type:3prime_partial (-),score=108.12 len:389 GFCP01035204.1:3-1169(-)
+Micrurus_fulvius_GAEP01_id_lcl|GAEP01001236.1_prot_JAB53585.1_1    -          VOG01304             -           2.2e-108  367.1   2.7   3.5e-59  204.7   0.6   2.0   1   1   1   2   2   2   2 lcl|GAEP01001236.1_prot_JAB53585.1_1 [protein=Protein F] [protein_id=JAB53585.1] [location=981..2264] [gbkey=CDS]
+Microplitis_demolitor_GANH01.transdecoder.pep_id_GANH01000184.1.p3 -          VOG01304             -           2.2e-108  367.1   2.7   3.6e-59  204.7   0.6   2.0   1   1   1   2   2   2   2 GANH01000184.1.p3 GENE.GANH01000184.1~~GANH01000184.1.p3  ORF type:complete (-),score=38.52 len:427 GANH01000184.1:4403-5686(-)
+Microplitis_demolitor_GANH01.transdecoder.pep_id_GANH01000184.1.p6 -          VOG01304             -            2.1e-73  251.7   6.2   1.6e-59  205.9   0.6   2.0   1   1   1   2   2   2   2 GANH01000184.1.p6 GENE.GANH01000184.1~~GANH01000184.1.p6  ORF type:5prime_partial (-),score=27.03 len:327 GANH01000184.1:9789-10772(-)
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      ../dbs/capsid_hmm.hmm
+# Target file:     ../proteins/all_proteins/all_venom_proteins.fasta
+# Option settings: hmmsearch --tblout hits.txt -E 1e-50 ../dbs/capsid_hmm.hmm ../proteins/all_proteins/all_venom_proteins.fasta 
+# Current dir:     /Users/emcdaniel/Desktop/Arcadia/science/toxin_facilitators/results
+# Date:            Tue Apr 11 10:51:02 2023
+# [ok]
