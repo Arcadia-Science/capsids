@@ -6,7 +6,7 @@ conda env create -n capsid_searches -f environment.yml
 ```
 
 ## Searching for viral capsid proteins
-Run capsid HMMs against sets of venomous species proteins with `python3 scripts/run_parse_hmms.py dbs/capsid_hmm.hmm proteins/all_proteins/all_venom_proteins.fasta --evalue 1e0` with no evalue cutoff so that I could just hand all of the results to the strike team. The results are in `results/2023-04-11_capsid_v1/` where I experimented with some different evalue cutoffs before settling with no cutoff based from input from strike/pilot people.
+Run capsid HMMs against sets of venomous species proteins with `python3 scripts/run_parse_hmms.py dbs/capsid_hmm.hmm proteins/all_proteins/all_venom_proteins.fasta --evalue 1e0` with no evalue cutoff. The results are in `results/2023-04-11_capsid_v1/` where I experimented with some different evalue cutoffs before settling with no cutoffs.
 
 To combine multiple FASTA files into one FASTA file where the filename is carried through to the header (important if you want to retain the accession or species number for example), use the script `reorganize_fastas.py`.
 
