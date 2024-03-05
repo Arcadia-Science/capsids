@@ -5,6 +5,9 @@ This README documents searching for viral capsid proteins sets of venom transcri
 conda env create -n capsid_searches -f environment.yml
 ```
 
+The most updated set of results are in `2023-06-01-updated-vog-results` where VOG capsid HMMs were run against the entire venom/tick database and 
+additional tick proteins from the TSA. The specific capsid VOGs from release 217 are listed in `metadata/Updated_capsid_VOGs_v217.txt`. 
+
 ## Searching for viral capsid proteins
 Run capsid HMMs against sets of venomous species proteins with `python3 scripts/run_parse_hmms.py dbs/capsid_hmm.hmm proteins/all_proteins/all_venom_proteins.fasta --evalue 1e0` with no evalue cutoff. The results are in `results/2023-04-11_capsid_v1/` where I experimented with some different evalue cutoffs before settling with no cutoffs.
 
