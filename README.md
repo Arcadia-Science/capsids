@@ -13,7 +13,7 @@ To combine multiple FASTA files into one FASTA file where the filename is carrie
 ## Searching for a specific viral capsid protein from Bracovirus
 We were specifically interested in a Bracovirus capsid protein that wasn't being captured from the previous HMM search, and found that for whatever reason this particular capsid wasn't included in the HMM above. We found the protein sequence for this capsid, BLASTed it in NCBI, and downloaded the hits and turned it into an HMM.
 
-Then we created an alignment of the multi-FASTA file of BLAST results to the capsid protein with `muscle -align vp39_psiBLAST_hits.fasta -output vp39_psiBLAST_hits.aln` then build an HMM profile with `hmmbuild vp39_capsid.hmm vp39_psiBLAST_hits.aln`. This was used to run `hmmsearch` against the venom proteins using the `run_parse_hmms.py` script with: `python3 ../scripts/run_parse_hmms.py vp39_capsid.hmm ../proteins/all_proteins/all_venom_proteins.fasta --evalue 1e0 --output_file ../results/vp39_capsid_summary.txt`
+Then we created an alignment of the multi-FASTA file of BLAST results to the capsid protein with `muscle -align vp39_psiBLAST_hits.fasta -output vp39_psiBLAST_hits.aln` then build an HMM profile with `hmmbuild vp39_capsid.hmm vp39_psiBLAST_hits.aln`. This was used to run `hmmsearch` against the venom proteins using the `run_parse_hmms.py` script with: `python3 ../scripts/run_parse_hmms.py vp39_capsid.hmm ../proteins/all_proteins/all_venom_proteins.fasta --evalue 1e0 --output_file ../results/vp39_capsid_summary.txt`. The files for creating this vp39 HMM and the HMM are in `hmms`.
 
 ## BLAST searches for _Amblyomma americanum_
 BLAST should already be installed in the environment you created above. First download the tick genome:
@@ -46,4 +46,4 @@ done
 tblastn -db Arcadia_Amblyomma_americanum_asm001_purged_cleanedup1 -query query_aa.fasta -max_target_seqs 100 -outfmt 6 -out outputfile_tblastn.txt
 ```
 
-The queries and results files are in `results/2023-04-20-blast-results`. 
+The queries and results files are in `results/2023-04-20-blast-results`.
