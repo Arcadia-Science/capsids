@@ -65,4 +65,4 @@ snakemake --snakefile Snakefile_ff --configfile ../capsids/metadata/config_ff.ym
 ```
 We then used the notebook in this repository, `notebooks/3_plotting_overlays.ipynb` to create custom plotting overlays for the UMAP. This notebook should be ran using the [`envs/plotting.yml`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.2/envs/plotting.yml) environment from the ProteinCartography repository. 
 
-The results from this analysis can be found in the [Zenodo](10.5281/zenodo.12796464) repo.
+The results from this analysis can be found in the [Zenodo](https://zenodo.org/records/12796464) repo.
