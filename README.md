@@ -50,3 +50,19 @@ tblastn -db Arcadia_Amblyomma_americanum_asm001_purged_cleanedup1 -query query_a
 ```
 
 The queries and results files are in `results/2023-04-20-blast-results`.
+
+## Structural clustering to identify capsids in *Ornithodoros turicata*
+
+In order to compare structures of tick proteins to viral capsid proteins, we ran [ProteinCartography](https://github.com/Arcadia-Science/ProteinCartography/tree/v0.4.2) using v0.4.2. 
+
+First, we cloned the ProteinCartography repository and followed the [README.md](https://github.com/Arcadia-Science/ProteinCartography/blob/main/README.md) to install the conda environments. We used the notebook in this repository, `notebooks/1_prep_metadata.ipynb` to fetch UniProt metadata for the *Ornithodoros* proteins in `metadata/ornithodoros.txt`, which we created by searching [UniProt](https://www.uniprot.org) for all *Ornithodoros* proteins. This notebook should be ran using the [`envs/web_apis.yml`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.2/envs/web_apis.yml) environment from the ProteinCartography repository.
+
+We then used the notebook in this repository, `notebooks/2_get_alphafold_structures.ipynb` to fetch predicted structures from the [AlphaFold database](https://alphafold.ebi.ac.uk) using the list of proteins in `metadata/ornithodoros.txt`. This notebook should also be ran using the [`envs/web_apis.yml`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.2/envs/web_apis.yml) environment from the ProteinCartography repository. We folded all of the proteins from the [Virus Orthologous Groups Database](https://vogdb.org) (VOG database) that contained "capsid" in the name of the group using [ESMFold](https://www.science.org/doi/10.1126/science.ade2574).
+
+Finally, we ran ProteinCartography using the `config_ff.yml` that can be found in the notebooks folder of this repository. The pipeline was initiated from inside the ProteinCartography repository with the `envs/cartography_tidy` environment activated using the following command: 
+```
+snakemake --snakefile Snakefile_ff --configfile ../capsids/metadata/config_ff.yml --use-conda --cores 4
+```
+We then used the notebook in this repository, `notebooks/3_plotting_overlays.ipynb` to create custom plotting overlays for the UMAP. This notebook should be ran using the [`envs/plotting.yml`](https://github.com/Arcadia-Science/ProteinCartography/blob/v0.4.2/envs/plotting.yml) environment from the ProteinCartography repository. 
+
+The results from this analysis can be found in the [Zenodo](10.5281/zenodo.12796464) repo.
